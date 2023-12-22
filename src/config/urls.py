@@ -23,4 +23,5 @@ urlpatterns = [
     # django extensions
     path("__debug__/", include("debug_toolbar.urls")),  # django-debug-toolbar
     path('accounts/', include('allauth.urls')),  # allauth
+    path('doctors/', include('apps.doctors.urls')),
 ]

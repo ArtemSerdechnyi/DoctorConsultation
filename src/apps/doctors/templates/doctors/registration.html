@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Registration</title>
+</head>
+<body>
+    <h2>Doctor Registration</h2>
+    <form method="post" action="{% url 'register_doctor' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
